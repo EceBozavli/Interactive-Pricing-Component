@@ -1,0 +1,246 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+     box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+        margin: 0;
+        padding: 0;
+    }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family: system-ui;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+     font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+     overflow-wrap: break-word;
+  }
+
+  body {
+     background: url('/assets/img/backround.png.png') no-repeat;
+    /* text-align: center; */
+     }
+
+  .container {
+    font-family: 'Manrope';
+    vertical-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27.32px;
+    /* text-align: center; */
+    color: #293356;
+    
+  } 
+  .header p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20.49px;
+    text-align: center;
+    color: #848EAD;
+
+  }
+  .hero {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+  }
+
+  .hero-inner p {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16.39px;
+    text-align: center;
+    color: #848EAD;  
+  }
+  .texts li {
+    margin-bottom: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.39px;
+    text-align: left;
+    color: #848EAD;
+    text-align: center;
+  }
+
+  .payment span strong {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 43.71px;
+    text-align: right;
+    color: #293356;
+  }
+
+  .payment span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.12px;
+    text-align: center;
+    color: #848EAD;
+  }
+
+  label input {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.39px;
+    text-align: center;
+    color: #848EAD;
+  }
+
+  .startBtn {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16.39px;
+    text-align: center;
+    width: 170px;
+    border-radius: 20.5px;
+    background-color: #293356;
+    color: #BECDFF;
+    padding-block: 12px;
+    margin-inline: 77px;
+
+    }
+
+
+  @media (width >= 768px) {
+    /* .container {
+        /* padding-inline: 24px; */
+    /* } */ 
+    .hero {
+     width: 327px;
+     height: 478px;
+    }
+    h3 {
+      padding-left: 24px;
+      margin-top: 89px;
+      padding-inline: 24px;
+      margin-bottom: 8px;
+        
+    }
+    p {
+     width: 326px;
+     text-align: center;
+        
+    }
+    .hero {
+     margin-top: 64px;
+     width: 327px;
+     margin-inline: 24px;
+     display: flex;
+     flex-direction: column;
+     gap: 25px; 
+     box-shadow: 0px 20px 30px -5px #7F89B927;
+
+    }
+    .payment {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+   .pageviews p {
+      padding-top: 34px;
+    }
+    .slider {
+      text-align: center;
+    } 
+    .billing {
+      display: flex;
+      /* justify-content: space-between; */
+      padding-inline: auto;
+      margin-bottom: 38px;
+     }
+    hr {
+      width: 327px;
+      height: 1px;
+      top: 277px;
+      border-color: #ECF0FB;  
+    }
+    .footer {
+      text-align: center;
+      display: grid;
+      gap: 32px;
+    }
+
+    .texts li {
+      list-style: none;
+    }
+    .texts li img {
+      vertical-align: center;
+    }
+}   
+
+/* @media (width >= 1298px) {
+    body background {
+         width: 1440px;
+         height: 449px;
+    }
+    h3 {
+         width: 393px;
+    }
+
+    .header p {
+         width: 367px;
+    }
+
+    .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+            "pageviews payment"
+            "slider slider";
+     }
+
+     .footer {
+         display: flex;
+     }
+
+     .texts li {
+         width: 148px;
+     }
+     .startBtn {
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 16.39px;
+            text-align: center;
+            width: 170px;
+            border-radius: 20.5px;
+            background-color: #293356;
+            color: #BECDFF;
+            padding-block: 12px;
+            margin-inline: 77px;
+     }
+    
+
+} */
